@@ -1,0 +1,7 @@
+<p>albums-for-user works!</p>
+
+<div *ngIf="albums|async">
+    <div *ngFor="let thisalbum of albums | async">
+        <app-album-item [album]=thisalbum></app-album-item>
+    </div>
+</div>

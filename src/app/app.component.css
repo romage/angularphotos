@@ -1,0 +1,31 @@
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 20px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+
+  @media (min-width: 700px) {
+    .main-head{
+      grid-column: 1 / span 12;
+      grid-row: 1 / span 2;
+    }
+    .main-nav {
+      grid-column: 1 / span 12;
+      grid-row: 3 / span 1;
+    }
+    .left-nav{
+      grid-column: 1 / span 2;
+      grid-row: 4 / span 8;
+    }
+    .content {
+      grid-column: col-start 3 / span 9;
+      grid-row: 4 / span 8;
+    }
+   .main-footer {
+      grid-column: col-start / span 12;
+      grid-row: 12 / span 1;
+    }
+  }
