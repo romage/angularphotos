@@ -12,12 +12,14 @@ import { AlbumsService } from 'src/app/services/albums.service';
 export class AlbumsForUserComponent implements OnInit {
 
   albums: Observable<Album[]> | null = null;
+  name: string | null = null;
 
   constructor(private albumsService: AlbumsService, private _route: ActivatedRoute) { }
 
   ngOnInit(): void {
 
     this._route.paramMap.subscribe((params: ParamMap) =>  {
+      this.name = params.get('name');
       this.getAlbumsForUser(params.get('id')?.toString()??'0');
     });
 

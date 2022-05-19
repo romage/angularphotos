@@ -10,6 +10,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [],
@@ -25,7 +27,9 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
     ,MatIconModule
     ,MatCardModule
     ,MatBottomSheetModule
-    
+    ,MatFormFieldModule
+    ,MatTabsModule
+        
   ], 
   exports: [
     MatButtonModule
@@ -39,11 +43,8 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
     ,MatIconModule
     ,MatCardModule
     ,MatBottomSheetModule
-
-
-
-
-
+    ,MatFormFieldModule
+    ,MatTabsModule
 
   ]
 })

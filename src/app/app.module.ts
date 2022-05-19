@@ -17,6 +17,9 @@ import { AlbumsComponent } from './components/albums/albums.component';
 import { PhotosComponent } from './components/photos/photos.component';
 import { AlbumsForUserComponent } from './components/albums-for-user/albums-for-user.component';
 import { AlbumItemComponent } from './components/album-item/album-item.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TestformComponent } from './components/testform/testform.component';
+import { AllUsersComponent } from './components/all-users/all-users.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,8 @@ import { AlbumItemComponent } from './components/album-item/album-item.component
     PhotosComponent,
     AlbumsForUserComponent,
     AlbumItemComponent,
+    TestformComponent,
+    AllUsersComponent,
    
   ],
   imports: [
@@ -40,6 +45,8 @@ import { AlbumItemComponent } from './components/album-item/album-item.component
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     MaterialModule
   ],
   providers: [],

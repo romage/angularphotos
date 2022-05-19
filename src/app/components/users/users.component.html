@@ -1,5 +1,4 @@
-<div *ngIf="users">
-    <div *ngFor="let thisUser of users | async">
-        <app-user-item [user]=thisUser></app-user-item>
-    </div>
-</div>
+<mat-tab-group mat-align-tabs="start">
+    <mat-tab label="User search"><app-user-search></app-user-search></mat-tab>
+    <mat-tab label="All users"><app-all-users></app-all-users></mat-tab>
+  </mat-tab-group>

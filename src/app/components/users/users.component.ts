@@ -9,13 +9,10 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
-  users = this.userService.getAllUsers();
 
   constructor(public userService: UserService) { }
 
   ngOnInit(): void {
-    //this.userService.getAllUsers().subscribe(data => this.users = data );
-    // this.users = this.userService.getAllUsers();
   }
 
 
