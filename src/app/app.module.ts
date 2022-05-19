@@ -9,17 +9,17 @@ import { TopNavComponent } from './components/layout/top-nav/top-nav.component';
 import { LeftNavComponent } from './components/layout/left-nav/left-nav.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { HeaderComponent } from './components/layout/header/header.component';
-import { UserSearchComponent } from './components/user-search/user-search.component';
+import { UserSearchComponent } from './components/users/user-search/user-search.component';
 import { HomeComponent } from './components/home/home.component';
-import { UsersComponent } from './components/users/users.component';
-import { UserItemComponent } from './components/user-item/user-item.component';
-import { AlbumsComponent } from './components/albums/albums.component';
-import { PhotosComponent } from './components/photos/photos.component';
-import { AlbumsForUserComponent } from './components/albums-for-user/albums-for-user.component';
-import { AlbumItemComponent } from './components/album-item/album-item.component';
+import { UsersComponent } from './components/users/users/users.component';
+import { UserItemComponent } from './components/users/user-item/user-item.component';
+import { AlbumsComponent } from './components/albums/albums/albums.component';
+import { PhotosComponent } from './components/photos/photos/photos.component';
+import { AlbumsForUserComponent } from './components/albums/albums-for-user/albums-for-user.component';
+import { AlbumItemComponent } from './components/albums/album-item/album-item.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TestformComponent } from './components/testform/testform.component';
-import { AllUsersComponent } from './components/all-users/all-users.component';
+import { AllUsersComponent } from './components/users/all-users/all-users.component';
+import { PhotosForAlbumComponent } from './components/photos/photos-for-album/photos-for-album.component';
 
 @NgModule({
   declarations: [
@@ -36,8 +36,8 @@ import { AllUsersComponent } from './components/all-users/all-users.component';
     PhotosComponent,
     AlbumsForUserComponent,
     AlbumItemComponent,
-    TestformComponent,
     AllUsersComponent,
+    PhotosForAlbumComponent,
    
   ],
   imports: [

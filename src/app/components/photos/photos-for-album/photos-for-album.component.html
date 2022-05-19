@@ -1,0 +1,13 @@
+<p>photos-for-album works!</p>
+
+
+<div *ngIf="photos"   class="photo-collection">
+    <div *ngFor="let photo of photos| async">
+        <mat-card>
+            <mat-card-header> {{ photo.title }}</mat-card-header>
+            <mat-card-content><img src={{photo.thumbnailUrl}} /></mat-card-content>
+        </mat-card>
+       
+        
+    </div>
+</div>
